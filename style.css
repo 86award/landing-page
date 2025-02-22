@@ -1,45 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 body {
-    font-family: Roboto, sans-serif;
     height: 100vh;
+    padding: 0;
     margin: 0;
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+}
+
+.header,
+.banner,
+.information,
+.quote,
+.call-to-action {
+    padding: 0 10%;
+}
+
+.header,
+.banner,
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 100px;
+}
+
+.header__logo {
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.header__links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.header__links li,
+.header__links li a,
+.banner__left__main-text 
+{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #d1d1d1;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 100;
+}
+
+.banner {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.banner__left {
+    justify-content: flex-end;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.header {
-    background-color: #1f2937;
-    color: #f9faf8;
-    padding: 0px 100px;
-    padding-top: 8px;
+.banner__left__hero-text {
+    font-size: 48px;
+    font-weight: 900;
 }
 
-.logo-bar {
+.banner__left__sign-up-button {
+    align-self: flex-start;
+    background-color: #3882F6;
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-width: 120px;
+    color: #F9FAF8;
+    
+}
+
+.banner__image {
+    margin-left: 32px;
+    width: 500px;
+    background-color: grey;
+}
+
+.information__title-text {
+    margin: 50px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+}
+
+.informaiton__card-container {
     display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.informaiton__card-container__card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 600;
+.informaiton__card-container__card__picture {
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
 }
 
-ul {
-    margin: 0;
+.quote {
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    gap: 16px;
+    flex-direction: column;
+    padding: 100px 20%;
+    background-color: #E5E7EB;
 }
 
-li {
-    list-style: none;
+.quote__main-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
 }
 
-a {
-    color: #9a9b9b;
-    text-decoration: none;
-    font-size: 18px;
+.quote__speaker {
+    align-self: flex-end;
+}
+
+.call-to-action__container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 8px;
+    padding: 50px 100px;
+    margin: 80px 0;
+}
+
+.call-to-action__container__left {
+    flex-grow: 3;
+}
+
+.call-to-action__container__left__hero-text {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.call-to-action__container__sign-up-button {
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 0 15%;
+    min-width: 80px;
+    color: #F9FAF8;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
 }
